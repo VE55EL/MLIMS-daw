@@ -1,0 +1,38 @@
+body  {
+    margin: auto;
+    text-align: center;
+    background-color: rgb(192, 192, 192);
+    font-family: 'Orbitron';
+}
+
+img {
+    margin-top: 50px;
+    width: 200px;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(155, 155, 155);
+    padding-bottom: 70px;
+}
+
+section.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+label.second {
+    margin-top: 20px;
+}
+
+input {
+    max-width: 240px;
+    margin: 15px auto 0px auto;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}
