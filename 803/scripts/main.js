@@ -1,4 +1,3 @@
-
 "use strict"
 
 function main() {
@@ -11,8 +10,8 @@ buttonSum.onclick = sum;
 buttonMultiply.onclick = multiply;
 buttonDivision.onclick = division;
 
-let ul = pete.after(document.createElement("ul"));
-let rest = document.querySelector('ul');
+let ul = document.createElement("ul");
+operations.after(ul);
 
 function sum() {
     let firstNumber = document.querySelector("#first").value;
@@ -20,9 +19,9 @@ function sum() {
     firstNumber = parseInt(firstNumber,10);
     secondNumber = parseInt(secondNumber,10);
     resultadoTexto.textContent =  "Result: " + (firstNumber + secondNumber);
-    rest.append(document.createElement('li'));
-    let li = document.querySelector('li');
-    li.append(document.createTextNode(firstNumber+" + "+secondNumber+" = "+(firstNumber + secondNumber)));
+    let li = document.createElement('li');
+    li.innerHTML = `${firstNumber} + ${secondNumber} = ${firstNumber + secondNumber}`;
+    ul.append(li);
 }
 function multiply() {
     let firstNumber = document.querySelector("#first").value;
@@ -30,9 +29,9 @@ function multiply() {
     firstNumber = parseInt(firstNumber,10);
     secondNumber = parseInt(secondNumber,10);
     resultadoTexto.textContent = firstNumber * secondNumber;
-    rest.append(document.createElement('li'));
-    let li = rest.querySelector('li')
-    li.append(document.createTextNode(firstNumber+" * "+secondNumber+" = "+(firstNumber * secondNumber)));
+    let li = document.createElement('li');
+    li.innerHTML = `${firstNumber} * ${secondNumber} = ${firstNumber * secondNumber}`;
+    ul.append(li);
 }
 function division() {
     let firstNumber = document.querySelector("#first").value;
@@ -40,9 +39,9 @@ function division() {
     firstNumber = parseInt(firstNumber,10);
     secondNumber = parseInt(secondNumber,10);
     resultadoTexto.textContent = firstNumber / secondNumber;
-    rest.append(document.createElement('li'));
-    let li = rest.querySelector('li')
-    li.append(document.createTextNode(firstNumber+" / "+secondNumber+" = "+(firstNumber / secondNumber)));
+    let li = document.createElement('li');
+    li.innerHTML = `${firstNumber} / ${secondNumber} = ${firstNumber / secondNumber}`;
+    ul.append(li);
 }
 }
 document.addEventListener("DOMContentLoaded",main);
