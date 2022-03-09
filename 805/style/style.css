@@ -1,0 +1,10 @@
+body {
+    color: rgb(39, 132, 219);
+    font-family: 'arial';
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding-left: 0px;
+}
