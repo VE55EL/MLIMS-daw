@@ -5,6 +5,12 @@ function random(min, max) {
     return num;
 }
 
+function selectAll() {
+    let checkboxes = document.querySelectorAll('input["type=checkbox"]');
+
+   
+}
+
 function main() {
 
     let checked = [10]
