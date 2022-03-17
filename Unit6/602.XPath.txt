@@ -1,0 +1,22 @@
+a. //name
+
+b. 
+    1 - //module[cycle="NISA"]/name/text()
+    2 - //cycle[.="NISA"]/../name/text()
+
+c. 
+    1 - //module[course=2]/name/text()
+    2 - //course[.=2]/../name/text()
+
+d.
+    1 - //module[hoursWeekly<5]/name/text()
+    2 - //hoursWeekly[.<5]/../name/text()
+
+e.
+    1 - //module[cycle="NISA" and course=1]/name/text()
+    2 - //cycle[.="NISA"]/../course[.=1]/../name/text()
+    
+f.
+    1 - //module[hoursWeekly>3]/hoursWeekly/text()
+    2 - //hoursWeekly[.>3]/../hoursWeekly/text()
+    

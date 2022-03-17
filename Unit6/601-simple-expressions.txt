@@ -1,0 +1,25 @@
+a. /secondary-school/name
+
+b. //web/text()
+
+c. //cycle/name/text()
+
+d. //@id
+
+e. //@year
+
+f. 
+    1 - //cycle[grade="Intermediate"]
+    2 - //grade[.="Intermediate"]/..
+        
+g. 
+    1 - //cycle[grade="Higher"]/name
+    2 - //grade[.="Higher"]/../name
+
+h. 
+    1 - //@year[.<2010]/../../name
+    2 - //cycle/name[../decreeTitle/@year<2010]
+
+i.
+    1 - //cycle/name[../decreeTitle/@year!=2009]
+    2 - //@year[.!=2009]/../../name
