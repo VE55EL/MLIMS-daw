@@ -6,14 +6,31 @@ function main() {
     let p = document.createElement("p");
     div.append(p);
     p.innerHTML = `Number of books: ${books.length}`;
+    
+    
 
-    let ul = document.createElement("ul");
-    div.append(ul);
-    for(let i = 0; i < books.length; i++){
-    let li = document.createElement("li");
-    ul.append(li);
-    li.innerHTML = `${books[i].title}`;
+    function load() {
+        let ul = document.createElement("ul");
+        div.append(ul);
+        for(let i = 0; i < books.length; i++){
+            let li = document.createElement("li");
+            ul.append(li);
+            li.innerHTML = `${books[i].title}`;
+        }
     }
+
+    load();
+
+    function order() {
+        books.sort(function(a,b){return a-b});
+        let ulid = document.querySelector("ul");
+        let uldad = ulid.parentNode;
+        uldad.removeChild(ulid);
+        load();
+    }
+
+    
+
     let button1 = document.createElement("button");
     button1.setAttribute("id","created");
     div.append(button1);
@@ -28,10 +45,18 @@ function main() {
     button3.setAttribute("id","abc");
     div.append(button3);
     button3.innerHTML = `order by alphabetical`
+    
+    
 
     let buttonCreated = document.querySelector("#created");
     let buttonUpdown = document.querySelector("#updown");
     let buttonAbc = document.querySelector("#abc");
+
+    
+    buttonCreated.addEventListener("click", order);
+    
+
+    
     
 }
 document.addEventListener('DOMContentLoaded', main);
