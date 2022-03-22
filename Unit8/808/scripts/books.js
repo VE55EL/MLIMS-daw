@@ -5,9 +5,7 @@ function main() {
     let div = document.querySelector("div");
     let p = document.createElement("p");
     div.append(p);
-    p.innerHTML = `Number of books: ${books.length}`;
-    
-    
+    p.innerHTML = `Number of books: ${books.length}`;    
 
     function load() {
         let ul = document.createElement("ul");
@@ -27,9 +25,7 @@ function main() {
         let uldad = ulid.parentNode;
         uldad.removeChild(ulid);
         load();
-    }
-
-    
+    } 
 
     let button1 = document.createElement("button");
     button1.setAttribute("id","created");
@@ -45,8 +41,6 @@ function main() {
     button3.setAttribute("id","abc");
     div.append(button3);
     button3.innerHTML = `order by alphabetical`
-    
-    
 
     let buttonCreated = document.querySelector("#created");
     let buttonUpdown = document.querySelector("#updown");
@@ -54,9 +48,6 @@ function main() {
 
     
     buttonCreated.addEventListener("click", order);
-    
 
-    
-    
 }
 document.addEventListener('DOMContentLoaded', main);
