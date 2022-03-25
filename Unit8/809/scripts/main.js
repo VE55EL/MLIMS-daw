@@ -22,8 +22,8 @@ let berserk = {
 
 let harryPotter4 = {
     title: 'Harry Potter 4',
-    author: 'Kentaro Miura',
-    publishedIn: 1989,
+    author: 'J. K. Rowling',
+    publishedIn: 200,
     alreadyRead: false,
     cover: 'harrypotter4.jpg'
 };
