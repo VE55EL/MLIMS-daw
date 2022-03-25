@@ -10,12 +10,14 @@ let cthulhu = {
     author: 'H. P. Lovecraft',
     publishedIn: 1928,
     alreadyRead: false,
+    cover: 'cthulhu.jpg'
 };
 let berserk = {
     title: 'Berserk',
     author: 'Kentaro Miura',
     publishedIn: 1989,
     alreadyRead: true,
+    cover: 'berserk.jpg'
 };
 
 let harryPotter4 = {
@@ -23,6 +25,7 @@ let harryPotter4 = {
     author: 'Kentaro Miura',
     publishedIn: 1989,
     alreadyRead: false,
+    cover: 'harrypotter4.jpg'
 };
 
 
