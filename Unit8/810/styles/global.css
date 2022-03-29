@@ -1,0 +1,17 @@
+div#booklist { 
+  padding: 0.5em;
+  display: flex;
+}
+
+div#buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 100px;
+  padding: 5px;
+}
+
+
+#btn-remove-last, #btn-remove-first { background-color: red;}
