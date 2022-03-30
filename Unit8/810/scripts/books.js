@@ -10,6 +10,8 @@ function showbooks(divBooks) {
     li.innerHTML = `${books[i].title} by ${books[i].author}`;
     ul.append(li);
   }
+  localStorage.setItem('books',books);
+  JSON.parse(localStorage.getItem('books'));
 }
 function createButton(id, text) {
 
@@ -62,10 +64,11 @@ function refreshBooks(e) {
   divBooks.removeChild(ul);
 
   showbooks(divBooks);
+  
 }
 function main() {
   let divBooks = document.querySelector("#books");  
-
+  
   let p = document.createElement('p');
   p.innerHTML = "Show the number of books: " + books.length;
   p.innerHTML = `Show the number of books: ${books.length}`;
@@ -131,7 +134,7 @@ function addEnd(e) {
    });
    
    refreshBooks();
-  
+   
 }
 
 function removeFirst() {

@@ -1,3 +1,5 @@
+"use strict"
+
 let metamorfosis = {
     title: 'La Metamorfosis',
     author: 'Franz Kafka',
@@ -27,8 +29,6 @@ let harryPotter4 = {
     alreadyRead: false,
     cover: 'harrypotter4.jpg'
 };
-
-
 
 let books = [metamorfosis, cthulhu, berserk];
 books.push(harryPotter4);
