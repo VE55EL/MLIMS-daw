@@ -30,9 +30,7 @@ function main() {
         vel.innerHTML = `Wind Speed: ${api.wind.speed}`;
         let deg = document.querySelector("#deg");
         deg.innerHTML = `Wind Degree: ${api.wind.deg}`;
-        let date = Date(api.dt);
-        let time = document.querySelector("#time");
-        time.innerHTML = `${date}`;
+        
      });
    //temperatura, el tiempo, velocidad viento y decrecimiento
 }
